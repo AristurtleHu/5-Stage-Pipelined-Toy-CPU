@@ -1,5 +1,5 @@
 ## Project 2.2: Implement a 5-Stage Pipelined Toy CPU
-implement a 5-stage pipelined CPU which can process all the instructions from Project 2.1 ([code](https://github.com/AristurtleHu/Single-Cycle_CPU_of_RISC-V))
+Implement a 5-stage pipelined CPU which can process all the instructions from Project 2.1 ([code](https://github.com/AristurtleHu/Single-Cycle_CPU_of_RISC-V))
 
 ### Introduction
 Opening `proj_2_2_top.circ` with Logisim-evolution, you will find several subcircuits inside it.
