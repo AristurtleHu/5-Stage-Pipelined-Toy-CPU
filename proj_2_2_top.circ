@@ -527,8 +527,8 @@
       <a name="label" val="inst_addr_wb"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(2210,2890)" name="Tunnel">
-      <a name="label" val="x0"/>
+    <comp lib="0" loc="(2220,2820)" name="Tunnel">
+      <a name="label" val="wb_en_mem"/>
     </comp>
     <comp lib="0" loc="(2240,1030)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -549,6 +549,12 @@
       <a name="facing" val="east"/>
       <a name="label" val="rs2_data_exec"/>
       <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(2250,3010)" name="Tunnel">
+      <a name="label" val="wb_en_wb"/>
+    </comp>
+    <comp lib="0" loc="(2260,2890)" name="Tunnel">
+      <a name="label" val="x0"/>
     </comp>
     <comp lib="0" loc="(230,990)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -1349,7 +1355,13 @@
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(2190,2890)" name="OR Gate"/>
+    <comp lib="1" loc="(2180,2740)" name="AND Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="1" loc="(2210,2930)" name="AND Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="1" loc="(2260,2890)" name="OR Gate"/>
     <comp lib="2" loc="(1290,2730)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
@@ -1840,9 +1852,22 @@
     <wire from="(2130,240)" to="(2140,240)"/>
     <wire from="(2130,450)" to="(2130,460)"/>
     <wire from="(2130,450)" to="(2140,450)"/>
+    <wire from="(2140,2820)" to="(2140,2850)"/>
+    <wire from="(2140,2820)" to="(2160,2820)"/>
     <wire from="(2140,2850)" to="(2140,2870)"/>
     <wire from="(2140,2910)" to="(2140,2920)"/>
-    <wire from="(2190,2890)" to="(2210,2890)"/>
+    <wire from="(2140,2920)" to="(2140,3010)"/>
+    <wire from="(2140,3010)" to="(2140,3020)"/>
+    <wire from="(2140,3010)" to="(2190,3010)"/>
+    <wire from="(2160,2790)" to="(2160,2820)"/>
+    <wire from="(2180,2740)" to="(2180,2870)"/>
+    <wire from="(2180,2870)" to="(2210,2870)"/>
+    <wire from="(2190,2980)" to="(2190,3010)"/>
+    <wire from="(2200,2790)" to="(2200,2820)"/>
+    <wire from="(2200,2820)" to="(2220,2820)"/>
+    <wire from="(2210,2910)" to="(2210,2930)"/>
+    <wire from="(2230,2980)" to="(2230,3010)"/>
+    <wire from="(2230,3010)" to="(2250,3010)"/>
     <wire from="(2240,1030)" to="(2270,1030)"/>
     <wire from="(2240,960)" to="(2270,960)"/>
     <wire from="(2250,1060)" to="(2260,1060)"/>
