@@ -422,12 +422,12 @@
     <comp lib="4" loc="(1510,1020)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 8
-00: B7 60 87 F9 13 01 90 01 93 01 A0 01 33 D2 10 40 
-10: B3 D2 20 40 33 D3 30 40 93 03 80 FE 33 04 32 00 
-20: B3 A4 21 00 23 28 10 02 23 1A 10 02 03 25 00 03 
-30: 23 1A B0 02 13 F6 C2 AB 93 B6 10 C3 13 D7 23 00 
-40: 97 77 F8 FF 13 00 00 00 13 00 00 00 13 00 00 00 
-50: 13 00 00 00 73 00 10 00 
+93 2 10 0 13 3 30 0
+13 5 0 0 33 5 55 0
+93 82 12 0 63 84 62 0
+6f f0 5f ff 13 0 0 0
+13 0 0 0 13 0 0 0
+73 0 10
 </a>
       <a name="line" val="quad"/>
       <a name="misaligned" val="true"/>
