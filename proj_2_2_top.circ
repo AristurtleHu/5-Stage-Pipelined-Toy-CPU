@@ -6866,9 +6866,6 @@ b3 a4 21 0 23 28 10 2
       <a name="facing" val="east"/>
       <a name="label" val="R"/>
     </comp>
-    <comp lib="0" loc="(1110,940)" name="Tunnel">
-      <a name="label" val="flush"/>
-    </comp>
     <comp lib="0" loc="(1150,1130)" name="Tunnel">
       <a name="label" val="sltu"/>
     </comp>
@@ -6883,6 +6880,9 @@ b3 a4 21 0 23 28 10 2
     </comp>
     <comp lib="0" loc="(1150,1620)" name="Tunnel">
       <a name="label" val="a_nd"/>
+    </comp>
+    <comp lib="0" loc="(1210,930)" name="Tunnel">
+      <a name="label" val="flush"/>
     </comp>
     <comp lib="0" loc="(1240,860)" name="Tunnel">
       <a name="label" val="control_en"/>
@@ -8463,14 +8463,14 @@ b3 a4 21 0 23 28 10 2
     <wire from="(1070,840)" to="(1110,840)"/>
     <wire from="(1070,880)" to="(1070,900)"/>
     <wire from="(1070,880)" to="(1110,880)"/>
-    <wire from="(1070,900)" to="(1070,940)"/>
-    <wire from="(1070,940)" to="(1110,940)"/>
     <wire from="(1130,1130)" to="(1150,1130)"/>
     <wire from="(1130,1220)" to="(1150,1220)"/>
     <wire from="(1130,1320)" to="(1150,1320)"/>
     <wire from="(1130,1470)" to="(1150,1470)"/>
     <wire from="(1130,1620)" to="(1150,1620)"/>
-    <wire from="(1160,860)" to="(1240,860)"/>
+    <wire from="(1160,860)" to="(1210,860)"/>
+    <wire from="(1210,860)" to="(1210,930)"/>
+    <wire from="(1210,860)" to="(1240,860)"/>
     <wire from="(1280,110)" to="(1320,110)"/>
     <wire from="(1280,150)" to="(1320,150)"/>
     <wire from="(1280,190)" to="(1320,190)"/>
