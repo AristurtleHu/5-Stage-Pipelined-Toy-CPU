@@ -310,12 +310,12 @@
     </comp>
     <comp lib="0" loc="(1460,2880)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="wb_data_exec"/>
+      <a name="label" val="alu_result_exec"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1460,3170)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="wb_data_exec"/>
+      <a name="label" val="alu_result_exec"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1480,1660)" name="Tunnel">
