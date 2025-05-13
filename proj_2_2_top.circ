@@ -588,9 +588,6 @@
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
     </comp>
-    <comp lib="0" loc="(2620,1660)" name="Tunnel">
-      <a name="label" val="flush"/>
-    </comp>
     <comp lib="0" loc="(2620,1700)" name="Tunnel">
       <a name="label" val="control_en_mem"/>
     </comp>
@@ -1012,49 +1009,49 @@
     </comp>
     <comp lib="0" loc="(880,100)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="current_pc_if_1"/>
+      <a name="label" val="current_pc_if"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(880,200)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="mem_wen_mem_1"/>
+      <a name="label" val="mem_wen_mem"/>
     </comp>
     <comp lib="0" loc="(880,260)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="mem_din_mem_1"/>
+      <a name="label" val="mem_din_mem"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(880,320)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="mem_dout_mem_1"/>
+      <a name="label" val="mem_dout_mem"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(880,380)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="mem_addr_mem_1"/>
+      <a name="label" val="mem_addr_mem"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(880,440)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="control_en_mem_1"/>
+      <a name="label" val="control_en_mem"/>
     </comp>
     <comp lib="0" loc="(880,500)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="control_pc_mem_1"/>
+      <a name="label" val="control_pc_mem"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(880,610)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="wb_en_wb_1"/>
+      <a name="label" val="wb_en_wb"/>
     </comp>
     <comp lib="0" loc="(880,660)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="wb_addr_wb_1"/>
+      <a name="label" val="wb_addr_wb"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(880,710)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="wb_data_wb_1"/>
+      <a name="label" val="wb_data_wb"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(890,1010)" name="Tunnel">
@@ -1801,7 +1798,7 @@
     <wire from="(2500,1120)" to="(2510,1120)"/>
     <wire from="(2560,170)" to="(2600,170)"/>
     <wire from="(2560,380)" to="(2600,380)"/>
-    <wire from="(2580,1700)" to="(2600,1700)"/>
+    <wire from="(2580,1700)" to="(2620,1700)"/>
     <wire from="(2580,1720)" to="(2600,1720)"/>
     <wire from="(2580,1780)" to="(2620,1780)"/>
     <wire from="(2580,1800)" to="(2600,1800)"/>
@@ -1812,6 +1809,7 @@
     <wire from="(2580,2060)" to="(2590,2060)"/>
     <wire from="(2580,230)" to="(2590,230)"/>
     <wire from="(2580,440)" to="(2590,440)"/>
+    <wire from="(2590,1820)" to="(2590,1840)"/>
     <wire from="(2590,1840)" to="(2620,1840)"/>
     <wire from="(2590,2010)" to="(2590,2020)"/>
     <wire from="(2590,2010)" to="(2620,2010)"/>
@@ -1821,9 +1819,6 @@
     <wire from="(2590,210)" to="(2600,210)"/>
     <wire from="(2590,420)" to="(2590,440)"/>
     <wire from="(2590,420)" to="(2600,420)"/>
-    <wire from="(2600,1660)" to="(2600,1700)"/>
-    <wire from="(2600,1660)" to="(2620,1660)"/>
-    <wire from="(2600,1700)" to="(2620,1700)"/>
     <wire from="(2600,1720)" to="(2600,1740)"/>
     <wire from="(2600,1740)" to="(2620,1740)"/>
     <wire from="(2600,1800)" to="(2600,1810)"/>
