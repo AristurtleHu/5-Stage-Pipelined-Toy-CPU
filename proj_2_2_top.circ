@@ -355,19 +355,19 @@
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
     </comp>
-    <comp lib="0" loc="(1530,1240)" name="Tunnel">
+    <comp lib="0" loc="(1530,1210)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="rs2_data_id"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(1530,1240)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="rs1_data_id"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1530,1570)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="mem_dout_wb"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1540,1210)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="rs1_data_id"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1540,240)" name="Tunnel">
@@ -1801,13 +1801,13 @@
     <wire from="(1520,380)" to="(1590,380)"/>
     <wire from="(1520,460)" to="(1530,460)"/>
     <wire from="(1520,480)" to="(1540,480)"/>
+    <wire from="(1530,1210)" to="(1550,1210)"/>
     <wire from="(1530,1240)" to="(1570,1240)"/>
     <wire from="(1530,1570)" to="(1530,1630)"/>
     <wire from="(1530,240)" to="(1530,250)"/>
     <wire from="(1530,240)" to="(1540,240)"/>
     <wire from="(1530,450)" to="(1530,460)"/>
     <wire from="(1530,450)" to="(1540,450)"/>
-    <wire from="(1540,1210)" to="(1550,1210)"/>
     <wire from="(1540,1610)" to="(1540,1630)"/>
     <wire from="(1540,1610)" to="(1580,1610)"/>
     <wire from="(1540,1670)" to="(1620,1670)"/>
