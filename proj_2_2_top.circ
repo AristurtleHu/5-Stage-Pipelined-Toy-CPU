@@ -470,8 +470,14 @@
     <comp lib="0" loc="(1930,510)" name="Tunnel">
       <a name="label" val="rst"/>
     </comp>
+    <comp lib="0" loc="(1930,540)" name="Tunnel">
+      <a name="label" val="flush"/>
+    </comp>
     <comp lib="0" loc="(1940,240)" name="Tunnel">
       <a name="label" val="rst"/>
+    </comp>
+    <comp lib="0" loc="(1940,270)" name="Tunnel">
+      <a name="label" val="flush"/>
     </comp>
     <comp lib="0" loc="(1990,420)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -1360,6 +1366,14 @@
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
+    <comp lib="1" loc="(1880,530)" name="OR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(1890,260)" name="OR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+    </comp>
     <comp lib="1" loc="(2620,530)" name="OR Gate">
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
@@ -1801,14 +1815,14 @@
     <wire from="(1840,480)" to="(1850,480)"/>
     <wire from="(1850,210)" to="(1850,230)"/>
     <wire from="(1850,210)" to="(1860,210)"/>
-    <wire from="(1880,500)" to="(1880,520)"/>
-    <wire from="(1880,520)" to="(1880,530)"/>
-    <wire from="(1880,520)" to="(1920,520)"/>
-    <wire from="(1890,230)" to="(1890,250)"/>
-    <wire from="(1890,250)" to="(1890,260)"/>
-    <wire from="(1890,250)" to="(1930,250)"/>
+    <wire from="(1880,500)" to="(1880,530)"/>
+    <wire from="(1890,230)" to="(1890,260)"/>
     <wire from="(1910,440)" to="(1990,440)"/>
+    <wire from="(1910,520)" to="(1920,520)"/>
+    <wire from="(1910,540)" to="(1930,540)"/>
     <wire from="(1920,170)" to="(2000,170)"/>
+    <wire from="(1920,250)" to="(1930,250)"/>
+    <wire from="(1920,270)" to="(1940,270)"/>
     <wire from="(1920,510)" to="(1920,520)"/>
     <wire from="(1920,510)" to="(1930,510)"/>
     <wire from="(1930,240)" to="(1930,250)"/>
