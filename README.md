@@ -1,7 +1,7 @@
-## Project 2.2: Implement a 5-Stage Pipelined Toy CPU
+# Project 2.2: Implement a 5-Stage Pipelined Toy CPU
 Implement a 5-stage pipelined CPU which can process all the instructions from Project 2.1 ([code](https://github.com/AristurtleHu/Single-Cycle_CPU_of_RISC-V))
 
-### Introduction
+## Introduction
 Opening `proj_2_2_top.circ` with Logisim-evolution, you will find several subcircuits inside it.
 
 *   **TOP:** This is the top-level circuit. It represents the implementation of the target toy CPU that includes the subcircuits.
@@ -16,12 +16,12 @@ Recall the classic 5 stages of CPU executing an instruction:
 
 In a 5-stage pipelined CPU, multiple instructions are processed simultaneously at different stages. The hazards are handled carefully in the pipeline. The explanations of the hazards are detailed in the [Hazards](#hazards) section.
 
-### Hazards
+## Hazards
 
-#### Structural Hazards
+### Structural Hazards
 Structural hazards occur when multiple instructions simultaneously compete for the same physical hardware resource. In a 5-stage pipelined CPU, these conflicts primarily affect memory access and register file operations. Need to address the hardware limitation in the register file, where concurrent read and write operations from different pipeline stages can create access conflicts. For standardized testing purposes, assuming that **register file and data memory write at the falling edge of the clock signal, while the other registers and memory write at the rising edge.**
 
-#### Data Hazards
+### Data Hazards
 Data hazards emerge when an instruction depends on data produced by a previous instruction which is still in the pipeline and not updated in the register file. These dependencies should be efficiently resolved through **data forwarding**. It routes computed values directly from the pipeline register to an earlier stage of the pipeline where they are needed.
 However, data forwarding cannot completely resolve the case of a load delay slot as shown in the below example with `x1`. Ignore this kind of data hazard because one bubble or other instructions are inserted  between the two instructions in the test cases.
 ```assembly
@@ -29,7 +29,7 @@ However, data forwarding cannot completely resolve the case of a load delay slot
     add x7, x1, x0
 ```
 
-#### Control Hazards
+### Control Hazards
 Control hazards occur when the processor cannot determine which instruction to fetch next until the branch or jump result is obtained. Implement **static branch prediction** as follows:
 
 1.  Initially assume that all branches or jumps are **not taken** and continue executing subsequent instructions, despite the branch condition being met or it being an unconditional jump instruction.
@@ -37,7 +37,7 @@ Control hazards occur when the processor cannot determine which instruction to f
 
 For standardized testing purposes, assuming that branch/jump resolution occurs in the **EX stage**, but the branch/jump taken signal (i.e., `control_pc_mem` in the TOP I/O) is fetched from the **MEM stage** for final determination.
 
-### TOP I/O
+## TOP I/O
 The TOP circuit incorporates predefined input/output ports for testing purposes, where most output signals are treated as "probes". 
 The inputs and outputs of the top level are fixed in the TOP circuit. The naming scheme of the output is `{signal}_{stage}`, which means the `{signal}` from `{stage}`.
 
@@ -57,11 +57,11 @@ The inputs and outputs of the top level are fixed in the TOP circuit. The naming
 | output | `wb_addr_wb`     | 5         | address written to regfile from WB stage  |
 | output | `wb_data_wb`     | 32        | data written to regfile from WB stage     |
 
-### Test
+## Test
 For the convenience of calibrating each cycle, an additional counter has been added to the `testbench`, which you can ignore.
 For the purpose of ensuring smooth testing, NOP instructions (i.e., `addi x0, x0, 0`) are inserted in the test cases. Don't care about the outputs for NOP instructions.
 
-#### Local Test
+### Local Test
 Provide two local tests containing all instruction patterns, but the reference output does not explicitly mark don't-care signals. `localtest_0` has no data and control hazards, while `localtest_1` includes some hazard cases.
 
 To run the tests:
